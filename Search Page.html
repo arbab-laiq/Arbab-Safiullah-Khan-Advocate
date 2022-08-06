@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 Search</title>
+</head>
+<style>
+p{
+  color: white;
+  font-style: italic;
+}
+h3{
+color: Red;
+font-size: 30px;
+font-style: italic;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 12px;
+  color: black;
+  text-align: center;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 10px;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: rgb(255, 0, 0);
+  opacity: 1;
+  border: 2px;
+  border-style: ridge;
+  border-color: white;
+  border-radius: 10px;
+}
+</style>
+<body>
+    <div class="row">
+        <div class="left" style="background-image: linear-gradient(white,black); border-color: black; border-style: solid;">
+          <h2>Search Bar</h2>
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search Content" title="Type in a category">
+          <ul id="myMenu">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">E</a></li>
+            <li><a href="#">F</a></li>
+            <li><a href="#">G</a></li>
+            <li><a href="#">H</a></li>
+            <li><a href="#">I</a></li>
+          </ul>
+        </div>
+        
+        <div class="right" style="background-image:linear-gradient(rgb(0, 0, 0),rgb(255, 255, 255));">
+          <h3>Page Content</h3>
+          <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+          <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+          <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+          <p>Some text..</p>
+        </div>
+      </div>
+      
+      <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍙 Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<style>
+    input[type=search] {
+        position: absolute;
+        top: 125px;
+        font-size: 25px;
+        border-radius: 8px;
+        border-color:rgb(194, 194, 194) ;
+        width: 64%;
+        padding: 8px;
+
+    }
+    .navbar {
+        width: 100%;
+        overflow: auto;
+        background-color: white;
+    }
+    .navbar a {
+        float: left;
+  text-align: end;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+    }
+.navbar a:hover {
+     opacity: 0.5;
+}
+.active {
+    position: absolute;
+    left: 100px;
+}
+.active1 {
+    position: absolute;
+    left: 300px;
+}
+.active2 {
+    position: absolute;
+    left: 500px;
+}
+.active3 {
+    position: absolute;
+    left: 700px;
+}
+.active4 {
+    position: absolute;
+    left: 900px;
+}
+</style>
+<body>
+    <h1>3D's MASTER MODELS</h1>
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i>🏠</a>
+        <a class="active1" href="#"><i class="fa fa-fw fa-search"></i>🔎</a>
+        <a class="active2" href="#"><i class="fa fa-fw fa-"></i>👥</a>
+        <a class="active3" href="#"><i class="fa fa-fw fa-"></i>📩</a>
+        <a class="active4" href="#"><i class="fa fa-fw fa-"></i>...</a>
+    </div>
+    <div class="container">
+        <form action="#" method="">
+        <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search Master's 3D Models" title="Type in a category">
+
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<html>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <link rel="stylesheet"
+    href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <title> Concept Cars </title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  text-align: end;
+  padding: 8px;
+  color: rgb(15, 122, 136);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.navbar a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.active {
+  background-color: #555555;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+        BODY{
+            font-family:initial;
+            background-color: grey;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 75px;
+            background-color: rgb(0, 27, 43);
+        }
+        input[type=EMAIL],
+        input[type=PHONE],
+        input[type=PASSWORD],
+        input[type=RADIO]{
+            font-size: 25px;
+            text-align: center;
+            outline-style:ridge;
+            background-color: black;
+            color: blanchedalmond;
+            text-shadow: grey;
+        }
+        input[type=EMAIL]:focus,input[type=PHONE]:focus,input[type=PASSWORD]:focus,input[type=RADIO]:focus{
+            background-color: rgb(0, 0, 0);
+        }
+        button{
+            background-color:black;
+            color: rgb(236, 236, 236);
+            padding: 10px 10px;
+            margin: 20px;
+            cursor: pointer;
+            width: 25%;
+            opacity: .5;
+            font-size: 25px;
+        }
+        button:hover{
+            opacity: 1;
+        }
+        a{
+            color: rgba(182, 232, 255, 0.521);
+        }
+        h1{
+            padding: 10px;
+            background-color: cornflowerblue;
+            color: cornsilk;
+            text-align: center;
+            border: 5px outset black;
+            outline-style: groove;
+            outline-color: snow;
+            outline-width: medium;
+            text-decoration: bold;
+            text-shadow: -2px -2px black ;
+            font-size: 45px;
+        }
+        p{
+            color: rgb(95, 95, 95);
+            font-size: 20px;
+        }
+        label{
+            text-decoration: underline;
+            text-decoration-style: solid;
+            font-size: 25px;
+            color: whitesmoke;
+            text-align: center;
+        }
+        input{
+            font-size: 25px;
+            text-align: center;
+            outline-style:ridge;
+            background-color: black;
+            color: blanchedalmond;
+            text-shadow: grey;
+        }
+        input:hover{
+            opacity: 1;
+        }
+        select{
+            font-size: 20px;
+            text-align: center;
+            font-style: italic;
+            color: aliceblue;
+            background-color: black;
+            border: silver;
+            border-style: ridge;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a class="active" href="D:\HTML\Project\Home.html"><i class="fa fa-fw fa-home">
+    </i> Home</a>
+    <a href="D:\HTML\Project\Search Page.html"><i class="fa fa-fw fa-search"></i>
+        Search</a> 
+        <a href="#"><i class="fa fa-fw fa-envelope"></i>
+            Contact</a>
+            <a href="D:\HTML\Project\Login Page.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+    <div class="container box">
+    <form action="" method="post" id="frmLogin">
+        <h1>Sign Up</h1>
+        <p>Please Fill The Form Below</p>
+        <br>
+        <br>
+        <label for="Login"> User Name Or Email </label>
+        <input type="email" name="member_name" placeholder="User Name or Email" > 
+        <br>
+        <br>
+        <label> Phone Number </label>
+        <input type="number" placeholder="Phone Number" required>
+        <br>
+        <br>
+        <label> Choose Password </label>
+        <input type="password" placeholder="Password" required>
+        <br>
+        <br>
+        <label> Re-Write Password </label>
+        <input type="password" placeholder="Re-Write Password" required>
+        <br>
+        <br>
+        <label> CNIC Number </label>
+        <input type="number" placeholder="Type CNIC Number" required>
+        <br>
+        <br>
+        <label for="remember-me">Remember me</label>
+        <input type="checkbox" name="remember">
+        <hr>
+        <label>Male</label>
+        <input type="radio" name="gender" value="choice 1">
+        <br>
+        <label>Female</label>
+        <input type="radio" name="gender" value="choice 2">
+        <br>
+        <label>Rather Not To Say</label>
+        <input type="radio" name="gender" value="choice 3">
+        <br>
+        <br>
+        <label>Date Of Birth</label>
+        <select>
+            <option>Month</option>
+            <option>January</option>
+            <option>Februry</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        <select>
+            <option>None</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+        </select>
+        <select>
+            <option>None Of The List</option>
+            <option>1980</option>
+            <option>1981</option>
+            <option>1982</option>
+            <option>1983</option>
+            <option>1984</option>
+            <option>1985</option>
+            <option>1986</option>
+            <option>1987</option>
+            <option>1988</option>
+            <option>1989</option>
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+        </select>
+        <p>
+            By Creating An Account You Must Agree to Our <a href="#">Terms And Privacy</a></p> 
+        <p><input type="checkbox" name="Box">  You Must Check The Box To Move Further To Confirm That You Agreed To Our Terms And Privacy</p>    
+            <button><a href="Add Full Path"> Sign Up </a></button>
+        <p>
+            If You Already Have An Account So Please <a href="D:\HTML\Project\Login Page.html">Login</a>
+        </p>    
+    </form>
+    </div>
+</body>
+</html>
